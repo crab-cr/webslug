@@ -1,15 +1,23 @@
-# npmslug
+# webslug
 
-TODO: Write a description here
-
+inspired by "slug" from npm, but optimized for my use case.
+```
+    Iom::WebSlug.slug("i ♥ unicode").should eq "i-love-unicode"
+    Iom::WebSlug.slug("I ♥ UNICODE").should eq "i-love-unicode"
+    Iom::WebSlug.slug("i <3 unicode").should eq "i-love-unicode"
+    Iom::WebSlug.slug("компютъра").should eq "kompyutura"
+    Iom::WebSlug.slug("unicode ♥ is ☢").should eq "unicode-love-is-radioactive"
+    Iom::WebSlug.slug("http://www.example.com").should eq "www-example-com"
+    Iom::WebSlug.slug("Schlotsky's").should eq "schlotskys"
+```
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
 
    ```yaml
    dependencies:
-     npmslug:
-       github: your-github-user/npmslug
+     webslug:
+       github: iomcr/webslug
    ```
 
 2. Run `shards install`
@@ -17,7 +25,7 @@ TODO: Write a description here
 ## Usage
 
 ```crystal
-require "npmslug"
+require "webslug"
 ```
 
 TODO: Write usage instructions here
@@ -28,7 +36,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/npmslug/fork>)
+1. Fork it (<https://github.com/iomcr/webslug/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -36,4 +44,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [InstanceOfMichael](https://github.com/your-github-user) - creator and maintainer
+- [Iomcr](https://github.com/iomcr) - creator and maintainer

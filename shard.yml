@@ -1,8 +1,10 @@
-name: npmslug
+name: webslug
 version: 0.1.0
+description: |
+  slug string optimized for pretty urls
 
 authors:
-  - InstanceOfMichael <michael@codebro.org>
+  - iomcr <>
 
 crystal: 0.34.0
 
