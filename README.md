@@ -1,6 +1,6 @@
 # webslug
 
-inspired by "slug" from npm, but optimized for my use case. Requests for more examples are welcome!
+inspired by "slug" from npm, but optimized for my slugs use case. Requests for more slug examples are welcome!
 ```
 require "webslug"
 
